@@ -3,8 +3,8 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, char const *argv[]) {
-
+int main(int argc, char const *argv[])
+{
   const int MONTHS = 12;
   int days[MONTHS] = {31, 28, 31, 30,
                       31, 30, 31, 31,

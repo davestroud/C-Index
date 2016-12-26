@@ -3,8 +3,8 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, char const *argv[]) {
-
+int main(int argc, char const *argv[])
+{
   const int SIZE = 9;
   string planets[SIZE] = { "Mercury", "Venus", "Earth", "Mars",
                           "Jupiter", "Saturn", "Uranus",
