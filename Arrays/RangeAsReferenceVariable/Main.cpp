@@ -16,7 +16,7 @@ int main(int argc, char const *argv[]) {
 
 	// Display the values in the array.
 	cout << "Here are the values you entered:\n";
-	for (int val : numbers)
+	for (auto val : numbers)
 		cout << val << endl;
 
 	return 0;
