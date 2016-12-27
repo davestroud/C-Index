@@ -9,7 +9,7 @@ int main(int argc, char const *argv[]) {
 	int numbers[] = { 10, 20, 30, 40, 50 };
 
 	// Display the values in the array.
-	for (auto val : numbers) {	// Auto keyword used to specify variable datatype
+	for (auto val : numbers) {	// Auto keyword used to specify variable datatype.
 		cout << "The next value is ";
 		cout << val << endl;
 	}
