@@ -21,7 +21,8 @@ int main(int argc, char const *argv[]) {
 	srand(seed);
 
 	cout << "Rolling the dice..\n";
-	die1 = (rand() % (MAX_VALUE - MIN_VALUE + 1) + MIN_VALUE);
+  // Formula limits the range of the random value.
+  die1 = (rand() % (MAX_VALUE - MIN_VALUE + 1) + MIN_VALUE);
 	die2 = (rand() % (MAX_VALUE - MIN_VALUE + 1) + MIN_VALUE);
 	cout << die1 << endl;
 	cout << die2 << endl;
