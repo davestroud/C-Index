@@ -13,6 +13,6 @@ int main(int argc, char const *argv[]) {
 	cout << "How many months will it take you to read them? ";
 	cin >> months;
 	perMonth = static_cast<double>(books) / months;
-	cout << "That is " << perMonth << " books per month.\n";
+  cout << "That is " << perMonth << " books per month.\n";
 	return 0;
 }
