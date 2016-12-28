@@ -1,5 +1,6 @@
 // This program asks for sales figures for 3 days.  The total
 // sales are calculated and displayed in a table.
+// Also suseds the fixed manipulator.
 
 #include <iostream>
 #include <iomanip>
@@ -22,7 +23,7 @@ int main(int argc, char const *argv[]) {
 	// Display the sales figures.
 	cout << "\nSales Figures\n";
 	cout << "---------------\n";
-	cout << setprecision(5);
+	cout << setprecision(2) << fixed;
 	cout << "Day 1: " << setw(8) << day1 << endl;
 	cout << "Day 2: " << setw(8) << day2 << endl;
 	cout << "Day 3: " << setw(8) << day3 << endl;
