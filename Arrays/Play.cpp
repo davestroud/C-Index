@@ -10,7 +10,7 @@ int main(int argc, char const *argv[]) {
 		values[count] = count + 1;
 
 	for (count = 0; count < SIZE; count++)
-		cout << values[count] << endl;
+		cout << values[count] << " ";
 
 	return 0;
 }
