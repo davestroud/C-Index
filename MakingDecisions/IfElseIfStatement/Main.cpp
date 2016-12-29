@@ -23,8 +23,10 @@ int main(int argc, char const *argv[]) {
 		cout << "Your grade is C.\n";
 	else if (testScore >= D_SCORE)
 		cout << "Your grade is D.\n";
-	else
+	else if (testScore >= 0)
 		cout << "Your grade is F.\n";
+  else
+    cout << "Invalid test score.\n";
 
 	return 0;
 }
