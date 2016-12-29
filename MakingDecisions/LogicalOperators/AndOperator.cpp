@@ -11,7 +11,7 @@ int main(int argc, char const *argv[]) {
 	cout << "with either Y for Yes or N for No.\n";
 	cout << "Are you employed? ";
 	cin >> employed;
-	cout << "Have you graduated from college in the past two year?\n";
+	cout << "Have you graduated from college in the past two years?\n";
 	cin >> recentGrad;
 
 	// Determine the user's loan qualifications
