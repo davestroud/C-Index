@@ -1,4 +1,4 @@
-// This program demonstrates the logical || operator.
+// This program demonstrates the logical ! operator.
 #include <iostream>
 using namespace std;
 
@@ -19,12 +19,11 @@ int main(int argc, char const *argv[]) {
 	cin >> years;
 
 	// Determine the user's loan qualifications
-	if (income >= MIN_INCOME || years > MIN_YEARS)
+	if (!(income >= MIN_INCOME || years > MIN_YEARS)) {
+		cout << "You must earn at least $" << MIN_INCOME << " or have been "
+				<< "employed more than " << MIN_YEARS << " years.\n";
+	} else
 		cout << "You qualify.\n";
-	else {
-		cout << "You must earn at least " << MIN_INCOME
-				<< " or have been employed for more than " << MIN_YEARS
-				<< " years.\n";
-	}
+
 	return 0;
 }
