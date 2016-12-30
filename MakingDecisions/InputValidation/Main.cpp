@@ -19,17 +19,17 @@ int main(int argc, char const *argv[]) {
 	// Validate the input and determine the grade.
 	if (testScore >= MIN_SCORE && testScore <= MAX_SCORE) {
 
-		// Determine the letter grade
-		if (testScore >= A_SCORE)
-			cout << "Your grade is A.\n";
-		else if (testScore >= B_SCORE)
-			cout << "Your grade is B.\n";
-		else if (testScore >= C_SCORE)
-			cout << "Your grade is C.\n";
-		else if (testScore >= D_SCORE)
-			cout << "Your grade is D.\n";
-		else
-			cout << "Your grade is F.\n";
+  		// Determine the letter grade
+  		if (testScore >= A_SCORE)
+  			cout << "Your grade is A.\n";
+  		else if (testScore >= B_SCORE)
+  			cout << "Your grade is B.\n";
+  		else if (testScore >= C_SCORE)
+  			cout << "Your grade is C.\n";
+  		else if (testScore >= D_SCORE)
+  			cout << "Your grade is D.\n";
+  		else
+  			cout << "Your grade is F.\n";
 	} else {
 		// An invalid score was entered.
 		cout << "That is an invalid score. Run the program\n"
