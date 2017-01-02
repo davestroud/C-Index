@@ -20,7 +20,7 @@ int main(int argc, char const *argv[]) {
 		cout << "\tStereo sound.\n";
 	case 100:
 		cout << "\tRemote control.\n";
-		break;
+		break;  // Notice that break is not after each case.
 	default:
 		cout << "You can only choose the 100,";
 		cout << "200, or 300.\n";
