@@ -1,4 +1,4 @@
-// The switch statement in this program tells the user somehthing
+// The switch statement in this program tells the user something
 // he already knows: the data just entered!
 #include <iostream>
 using namespace std;
