@@ -1,12 +1,14 @@
 #include <iostream>
 
 int main(int argc, char const *argv[]) {
+  int remainder = 1;
+  int num;
 
-  int x = 99;
-  if (++x < 100)
-    std::cout << "It is true!" << '\n';
-  else
-    std::cout << "It is false" << '\n';
+  while (remainder == 1) {
+    std::cout << "Enter a number" << '\n';
+    std::cin >> num;
+    remainder = num % 2;
+  }
 
   return 0;
 }
