@@ -15,5 +15,19 @@ int main(int argc, char const *argv[]) {
 	std::cout << num << '\n';       // Displays 5
 	std::cout << --num << '\n';     // Subtracts 1 from num, then displays 4
 
+  // Example 1 using postfix
+  int a = 2;
+  int b = 5;
+  int c = a * b++;
+  std::cout << a << " " << b << " " << c << '\n';
+
+  std::cout << " " << '\n';   // Displays a blank line
+
+  // Example 2 using prefix
+  int a2 = 2;
+  int b2 = 5;
+  int c2 = a2 * ++b2;
+  std::cout << a2 << " " << b2 << " " << c2 << '\n';
+
 	return 0;
 }
