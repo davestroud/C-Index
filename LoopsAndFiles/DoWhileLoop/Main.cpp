@@ -1,5 +1,6 @@
 // This program averages 3 test scores. It repeats as
 // many times as the user wishes.
+// This is a user-controlled loop.
 // The do-while loop is a posttest loop.
 #include <iostream>
 
@@ -18,7 +19,7 @@ int main(int argc, char const *argv[]) {
 		std::cout << "The average is " << average << '\n';
 
 		// Does the user want to average another set?
-		std::cout << "Do you want to average another set? (Y/N)";
+		std::cout << "Do you want to average another set? (Y/N) ";
 		std::cin >> again;
 	} while (again == 'Y' || again == 'y');
 
