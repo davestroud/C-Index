@@ -11,7 +11,7 @@ int main(int argc, char const *argv[]) {
 	// Variables
 	int players,        // Number of available players
 			teamPlayers,    // Number of desired players per team
-			numTeams,       // Number of teamPlayers
+			numTeams,       // Number of teams
 			leftOver;       // Number of players left over
 
 	// Get the number of players per team.
@@ -22,8 +22,8 @@ int main(int argc, char const *argv[]) {
 	while (teamPlayers < MIN_PLAYERS || teamPlayers > MAX_PLAYERS) {
 
 		// Explain the error
-		std::cout << "You should have at least" << MIN_PLAYERS
-				<< "but no more than " << MAX_PLAYERS << " per team." << '\n';
+		std::cout << "You should have at least " << MIN_PLAYERS
+				<< " but no more than " << MAX_PLAYERS << " per team." << '\n';
 
 		// Get the input again
 		std::cout << "How many players do you wish per team? ";
@@ -48,7 +48,7 @@ int main(int argc, char const *argv[]) {
 	leftOver = players % teamPlayers;
 
 	// Display the results.
-	std::cout << "There will be " << numTeams << " teams with  " << leftOver
+	std::cout << "There will be " << numTeams << " teams with " << leftOver
 			<< " players left over." << '\n';
 
 	return 0;
