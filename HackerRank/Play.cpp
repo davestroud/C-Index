@@ -1,21 +1,21 @@
-// reverse algorithm example
-#include <iostream>     // std::cout
-#include <algorithm>    // std::reverse
-#include <vector>       // std::vector
+#include <sstream>
+#include <vector>
+#include <iostream>
+using namespace std;
 
-int main () {
-  std::vector<int> myvector;
+int main(int argc, char const *argv[]) {
 
-  // set some values:
-  for (int i=1; i<10; ++i) myvector.push_back(i);   // 1 2 3 4 5 6 7 8 9
+  int number;
+  cout << "Enter an integer value\n";
+  cin >> number;
 
-  std::reverse(myvector.begin(),myvector.end());    // 9 8 7 6 5 4 3 2 1
+  stringstream sso;
+  sso << number;
+  string strnumber;
+  sso >> strnumber;
 
-  // print out content:
-  std::cout << "myvector contains:";
-  for (std::vector<int>::iterator it=myvector.begin(); it!=myvector.end(); ++it)
-    std::cout << ' ' << *it;
-  std::cout << '\n';
+  cout << "The integer number is " << number << endl;
+  cout << "The string form of number is " << strnumber << endl;
 
   return 0;
 }
