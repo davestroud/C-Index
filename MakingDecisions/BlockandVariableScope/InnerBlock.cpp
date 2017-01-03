@@ -8,24 +8,24 @@ int main(int argc, char const *argv[]) {
 	const int MIN_YEARS = 5;
 
 	// Get the annual income.
-	cout << "what is your annual income? ";
+	cout << "What is your annual income? ";
 	double income;   // Variable definition
 	cin >> income;
 
 	if (income >= MIN_INCOME) {
 		// Get the number of years at the current job.
-		cout << "How many years have you worked at " << "your current job? ";
+		cout << "How many years have you worked at your current job? ";
 		int years;  // Variable definition
 		cin >> years;
 
-		if (years > MIN_YEARS)
-			cout << "You qualify.\n";
-		else {
-			cout << "You must have been employed for\n" << "more than "
-					<< MIN_YEARS << " years to qualify.\n";
-		}
+  		if (years > MIN_YEARS)
+  			cout << "You qualify.\n";
+  		else {
+  			cout << "You must have been employed for more than " << MIN_YEARS
+  					<< " years to qualify.\n";
+  		}
 	} else {
-		cout << "You must earn at least $ " << MIN_INCOME << " to qualify.\n";
+		cout << "You must earn at least $" << MIN_INCOME << " to qualify.\n";
 	}
 	return 0;
 }
