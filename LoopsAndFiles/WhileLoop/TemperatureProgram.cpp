@@ -7,7 +7,7 @@ int main(int argc, char const *argv[]) {
 	double temperature;               // To hold the temperature
 
 	// Get the current temperature
-	std::cout << "Enter the substance's Celsius temperature: " << '\n';
+	std::cout << "Enter the substance's Celsius temperature: ";
 	std::cin >> temperature;
 
 	// As long as necessary, instruct the technician
@@ -16,13 +16,13 @@ int main(int argc, char const *argv[]) {
 		std::cout << "The temperature is too high. Turn the" << '\n';
 		std::cout << "thermostat down and wait 5 minutes." << '\n';
 		std::cout << "Then take the Celcius temperature again" << '\n';
-		std::cout << "and enter it here: " << '\n';
+		std::cout << "and enter it here: ";
 		std::cin >> temperature;
 	}
 	// Remind the technician to check the temperature
 	// again in 15 minutes.
 	std::cout << "The temperature is acceptable." << '\n';
-	std::cout << "Check it again in 15 minues." << '\n';
+	std::cout << "Check it again in 15 minutes." << '\n';
 
 	return 0;
 }
