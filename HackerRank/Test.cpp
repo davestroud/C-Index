@@ -1,18 +1,29 @@
-#include <iostream>
+#include <cmath>
 #include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
-int main(int argc, char const *argv[]) {
+int main() {
 
+	int a, b;
 
+	string represent[10] = { "zero", "one", "two", "three", "four", "five",
+			"six", "seven", "eight", "nine" };
 
-  for (int i = 0; i < 10; i++) {
-    if ()
-      cout << ""
-    else if (n > 9 && (n % 2 = 0))
-      cout << "even";
-    else if ( n > 9 && (n % 2 = 1)
-      cout << "odd";
-  }
-  return 0;
+  cout << "Enter two numbers.\n";
+  cin >> a >> b;
+	for (int i = a; i <= b; i++) {
+
+		if (i > 9) {
+			if (i % 2 == 0)
+				cout << "even\n";
+			else
+				cout << "odd\n";
+		} else {
+			cout << represent[i] << endl;
+		}
+	}
+	return 0;
 }
