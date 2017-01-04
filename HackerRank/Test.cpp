@@ -5,25 +5,13 @@
 #include <algorithm>
 using namespace std;
 
-int main() {
 
-	int a, b;
-
-	string represent[10] = { "zero", "one", "two", "three", "four", "five",
-			"six", "seven", "eight", "nine" };
-
-  cout << "Enter two numbers.\n";
-  cin >> a >> b;
-	for (int i = a; i <= b; i++) {
-
-		if (i > 9) {
-			if (i % 2 == 0)
-				cout << "even\n";
-			else
-				cout << "odd\n";
-		} else {
-			cout << represent[i] << endl;
-		}
-	}
-	return 0;
+int main(){
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for(int arr_i = 0;arr_i < n;arr_i++){
+       cin >> arr[arr_i];
+    }
+    return 0;
 }

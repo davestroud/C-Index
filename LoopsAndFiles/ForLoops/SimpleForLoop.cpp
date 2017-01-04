@@ -15,6 +15,20 @@ int main(int argc, char const *argv[]) {
 	for (num = MIN_NUMBER; num <= MAX_NUMBER; num++)
 		std::cout << num << "\t\t" << (num * num) << std::endl;
 
+
+	std::cout << " " << '\n';		// line break
+
+	// Loop displays all even number 2 through 40
+	for (num = 2; num <= 40; num += 2)
+		std::cout << num << ' ';
+
+	std::cout << " " << '\n';		// line break
+	std::cout << " " << '\n';		// line break
+
+	// Loop that counts backward from 10 to 0.
+	for (num = 10; num >= 0; num--)
+		std::cout << num << ' ';
+
 	return 0;
 }
 
