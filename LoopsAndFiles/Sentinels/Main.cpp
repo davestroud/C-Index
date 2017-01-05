@@ -1,5 +1,5 @@
 // A sentinel is a special value that marks the end of a list of values.
-// This program calculates the totla number of points a
+// This program calculates the totalnumber of points a
 // soccer team has earned over a series of games.  The user
 // enters a series of point values, then -1 when finished.
 #include <iostream>
