@@ -14,11 +14,11 @@ int main(int argc, char const *argv[]) {
 
   // Get the number of students.
   std::cout << "This program averages test scores" << '\n';
-  std::cout << "For how many students do you have scores?";
+  std::cout << "For how many students do you have scores? ";
   std::cin >> numStudents;
 
   // Get the number of test scores per student.
-  std::cout << "How many test scores does each student have?";
+  std::cout << "How many test scores does each student have? ";
   std::cin >> numTests;
 
   // Determine each student's average score.
@@ -33,7 +33,7 @@ int main(int argc, char const *argv[]) {
     }
     average = total / numTests;
     std::cout << "The average score for student " << student;
-    std::cout << "is " << average << ".\n\n";
+    std::cout << " is " << average << ".\n\n";
   }
 
   return 0;
